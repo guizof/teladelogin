@@ -5,9 +5,9 @@ const style = StyleSheet.create({
     input: {
         width: '100%',
         margin: 10,
-        shadowOpacity: 0.25,  
-        shadowRadius: 7.84,     
-        color: 'gray', 
+        shadowOpacity: 0.80,  
+        shadowRadius: 3,     
+        color: 'black', 
         padding:5
         
     },
@@ -17,23 +17,23 @@ const style = StyleSheet.create({
         flex:'1', 
       
     },
-     botao:{
-    alignItems: 'center',
-    justifyContent: 'center',
-    borderRadius: 4,
-    backgroundColor: 'black',
-    color:'white',
-    paddingHorizontal: 8,
-    paddingVertical: 3,
-    margin:10
+    botao:{
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderRadius: 20,
+        backgroundColor: 'black',
+        color:'white',
+        paddingHorizontal: 8,
+        paddingVertical: 3,
+        margin:10
 
-     },
+    },
 
     titulo:{
         fontSize: 50,
         textAlign: 'center',
         margin: 10,
-        fontFamily: 'Open Sans',
+        fontFamily: 'Calibri',
         fontWeight:'800',
    
     },
@@ -47,14 +47,13 @@ const style = StyleSheet.create({
         
     },
    box:{
-    shadowOpacity: 0.25,  
-        shadowRadius: 8.84, 
+    shadowOpacity: 1,  
+        shadowRadius: 5, 
        padding: 50
    }
 })
 
 export default SinUp = () => {
-    //const email = ''
 
     const [email, setEmail] = useState('')
     const [nome, setNome] = useState('')
@@ -88,7 +87,7 @@ return (
     <SafeAreaView style={style.container}>
         <View style={style.box}>
         <View >
-            <Text style={style.titulo}>Registre-se</Text>
+            <Text style={style.titulo}>REGISTRE-SE</Text>
         </View>
         <View style={style.inputView}>
             <TextInput
